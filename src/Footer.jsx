@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-      <footer className="bg-gradient-to-tr from-green-400 via-green-500 to-green-600 text-white rounded-2xl mb-1 ml-2.5 mr-2.5 py-8 mt-10 text-center relative">
+      <footer className="bg-gradient-to-tr from-green-400 via-green-500 to-green-600 text-white rounded-2xl mb-4 ml-2.5 mr-2.5 py-8 mt-10 text-center relative">
         
         <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-2 mb-4">
           <span className="inline-flex items-center gap-2  font-semibold text-lg text-white">
