@@ -5,21 +5,27 @@ const Gallery = () => {
         {
             id: 1,
             img: "celebration gallery1.webp",
-            title: "Beautiful Landscape",
-            desc: "Experience nature like never before."
+
         },
         {
             id: 2,
-            img: "celebration galler 2.jpg",
-            title: "Ocean Breeze",
-            desc: "Feel the fresh ocean air."
+            img: "baja on rishka pic.jpg",
         },
         {
             id: 3,
-            img: "baja on rishka pic.jpg",
-            title: "Mountain View",
-            desc: "Reach new heights of adventure."
-        }
+            img: "celebration galler 2.jpg",
+        },
+        {
+            id: 4,
+            img: "2022-08_pakistan-day_04.jpg",
+
+        },
+        {
+            id: 5,
+            img: "2022-08_pakistan-day_04 (1).jpg",
+
+        },
+
     ];
 
     const [current, setCurrent] = useState(0);
@@ -34,10 +40,14 @@ const Gallery = () => {
 
     return (
         <>
-            {/* <div>
-               <h1>Celebration galler</h1>
-            </div> */}
-            <div className="relative w-full  mx-auto overflow-hidden mt-6">
+            <div className="flex justify-center items-center mt-6">
+                <div className="w-[100%] h-auto grid justify-center items-center bg-green-100 rounded-2xl ml-1.5 mr-1.5 pt-4 pb-4 pl-2 pr-2">
+                    <h1 className="text-center text-2xl md:text-3xl font-medium text-green-700">Celebration galler</h1>
+                    <p className="text-center">Here are some pictures that prove that Pakistani people celebrate their Independence Day with great joy.</p>
+                </div>
+            </div>
+
+            <div className="relative w-[97.5%]  mx-auto overflow-hidden mt-3">
                 {/* Slides */}
                 <div
                     className="flex transition-transform duration-500"

@@ -34,7 +34,7 @@ const Header = ({isMobileMenuOpen , handleSmoothScroll , toggleMobileMenu}) => {
             onClick={(e) => handleSmoothScroll(e, "countdown")}
             className="transition-all duration-300 ease-in-out hover:text-green-200 hover:scale-110 px-2 py-1 rounded"
           >
-            Countdown
+            Since years
           </a>
         </div>
 
@@ -75,7 +75,7 @@ const Header = ({isMobileMenuOpen , handleSmoothScroll , toggleMobileMenu}) => {
               <a href="#history" onClick={(e) => handleSmoothScroll(e, "history")} className="px-4 py-3 rounded-2xl hover:bg-green-600 transition-colors border-b border-green-600">History</a>
               <a href="#leaders" onClick={(e) => handleSmoothScroll(e, "leaders")} className="px-4 py-3 rounded-2xl  hover:bg-green-600 transition-colors border-b border-green-600">Leaders</a>
               <a href="#gallery" onClick={(e) => handleSmoothScroll(e, "gallery")} className="px-4 py-3 rounded-2xl  hover:bg-green-600 transition-colors border-b border-green-600">Gallery</a>
-              <a href="#countdown" onClick={(e) => handleSmoothScroll(e, "countdown")} className="px-4 py-3 hover:bg-green-600 rounded-2xl  transition-colors">Countdown</a>
+              <a href="#countdown" onClick={(e) => handleSmoothScroll(e, "countdown")} className="px-4 py-3 hover:bg-green-600 rounded-2xl  transition-colors"> Since years</a>
             </div>
           </div>
         )}

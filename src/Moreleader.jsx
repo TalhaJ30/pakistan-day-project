@@ -50,7 +50,7 @@ const Moreleader = () => {
                         >
                             <div className="absolute inset-0 bg-gradient-to-t from-green-100 via-transparent to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300 pointer-events-none z-0" />
                             <div className="flex flex-col items-center relative z-10 p-6">
-                                <div className="h-50 w-45 md:h-auto md:w-auto rounded-2xl overflow-hidden border-3 border-green-400 shadow-lg mb-4 bg-white">
+                                <div className={`h-47 w-44 md:h-auto md:w-auto rounded-2xl overflow-hidden border-3 border-green-400 shadow-lg mb-4 bg-white `}>
                                     <img
                                         src={item.image}
                                         alt={item.name}

@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Frontpage = ({handleSmoothScroll}) => {
+const Frontpage = ({handleSmoothScroll , countdown}) => {
     return (
         <>
             <div>
                 <section className={`flex flex-col md:flex-row items-center px-6 md:px-15 py-16 bg-white text-white`}>
                     <div className="flex-1">
-                        <h2 className="text-4xl md:text-5xl font-medium mb-6 bg-gradient-to-tr from-green-300 via-green-400 to-green-700 text-transparent bg-clip-text">
-                            14th August Independence Day of Pakistan
+                        <h2 className="text-4xl md:text-5xl leading-[1.1]  font-medium mb-6 bg-gradient-to-tr from-green-300 via-green-400 to-green-700 text-transparent bg-clip-text">
+                        {countdown} Independence Day of Pakistan
                         </h2>
                         <p className="text-lg mb-6 bg-gradient-to-tl from-green-400 via-green-400 to-green-700 text-transparent bg-clip-text">
                             Pakistan celebrates its independence on 14th August every year. It marks the historic day in 1947 when Pakistan emerged as a sovereign nation.

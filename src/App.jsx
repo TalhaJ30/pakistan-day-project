@@ -6,9 +6,10 @@ import Leader from "./Leader";
 import Footer from "./Footer";
 import Completedetail from "./Completedetail";
 import Gallery from "./Gallery";
+import Countdown from "./Countdown";
 
 export default function App() {
-  const [countdown, setCountdown] = useState("");
+  
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Smooth scroll function
@@ -34,31 +35,25 @@ export default function App() {
   }, []);
 
   // Countdown Timer
+  const [countdown, setCountdown] = useState('')
+
   useEffect(() => {
-    const targetDate = new Date(new Date().getFullYear(), 7, 14); // Aug 14
-    if (new Date() > targetDate) {
-      targetDate.setFullYear(targetDate.getFullYear() + 1);
+    const calculateCountdown = () => {
+      const currentYear = new Date().getFullYear()
+      const pakistanIndependenceYear = 1947
+      const yearsSinceIndependence = currentYear - pakistanIndependenceYear
+      
+      setCountdown(`${yearsSinceIndependence}th`)
     }
 
-    const timer = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const minutes = Math.floor(
-        (distance % (1000 * 60 * 60)) / (1000 * 60)
-      );
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      setCountdown(`${days}d ${hours}h ${minutes}m ${seconds}s`);
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
+    calculateCountdown()
+    
+    // Update countdown every year
+    const interval = setInterval(calculateCountdown, 1000 * 60 * 60 * 24 * 365)
+    
+    return () => clearInterval(interval)
+  }, [])
+ 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -119,7 +114,7 @@ export default function App() {
           {/* Hero Section */}
 
           <div>
-            <Frontpage handleSmoothScroll={handleSmoothScroll} />
+            <Frontpage handleSmoothScroll={handleSmoothScroll} countdown={countdown} />
           </div>
 
           {/* History Section */}
@@ -129,22 +124,19 @@ export default function App() {
           </div>
 
           {/* Leaders Section */}
-          <div>
+          <div >
             <Leader />
           </div>
 
           {/* Gallery Section */}
-          <div className="h-auto w-auto mt-2.5">
+          <div className="h-auto w-auto mt-2.5" id="gallery">
             <Gallery />
           </div>
 
-        
-
-          {/* Countdown Section */}
-          {/* <section id="countdown" className="px-6 md:px-20 py-16 bg-green-700 text-white text-center">
-        <h3 className="text-3xl font-bold mb-4">Countdown to Next 14th August</h3>
-        <p className="text-2xl">{countdown}</p>
-      </section> */}
+         {/* Countdown Section */}
+         <div>
+          <Countdown countdown={countdown}/> 
+         </div> 
 
           {/* Footer */}
           <Footer Date={Date} />
