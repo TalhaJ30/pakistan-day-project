@@ -8,8 +8,9 @@ import Completedetail from "./Completedetail";
 import Gallery from "./Gallery";
 import Countdown from "./Countdown";
 
+
 export default function App() {
-  
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Smooth scroll function
@@ -42,18 +43,17 @@ export default function App() {
       const currentYear = new Date().getFullYear()
       const pakistanIndependenceYear = 1947
       const yearsSinceIndependence = currentYear - pakistanIndependenceYear
-      
+      // The console.log is being called every time calculateCountdown runs (i.e., on mount).
+      // If you only want to see the value once, you can remove or comment out this line:
+      // console.log(`${currentYear}`)   
       setCountdown(`${yearsSinceIndependence}th`)
-    }
 
+    }
+    
     calculateCountdown()
-    
-    // Update countdown every year
-    const interval = setInterval(calculateCountdown, 1000 * 60 * 60 * 24 * 365)
-    
-    return () => clearInterval(interval)
+   
   }, [])
- 
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -133,13 +133,13 @@ export default function App() {
             <Gallery />
           </div>
 
-         {/* Countdown Section */}
-         <div>
-          <Countdown countdown={countdown}/> 
-         </div> 
+          {/* Countdown Section */}
+          <div>
+            <Countdown countdown={countdown} />
+          </div>
 
           {/* Footer */}
-          <Footer Date={Date} />
+          <Footer />
         </div>
       }
 

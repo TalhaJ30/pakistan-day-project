@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Curranttimes from './Curranttimes'
 
 const Countdown = ({countdown}) => {
  
@@ -48,6 +49,9 @@ const Countdown = ({countdown}) => {
           </div>
         </div>
       </section>
+      <div>
+        <Curranttimes />
+      </div>
     </>
   )
 }
