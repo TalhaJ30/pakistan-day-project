@@ -18,7 +18,7 @@ const Footer = () => {
           <p className="text-green-400 font-semibold text-lg bg-white ml-2 mr-2 rounded-2xl p-3">
             Developed by <span className="text-green-600">Muhammad Talha Javed</span> &mdash; Passionate Frontend Developer
           </p>
-          <p className="text-gray-00 text-base mt-1  bg-white ml-2 mr-2 rounded-2xl p-3">
+          <p className="text-gray-500 text-base mt-1  bg-white ml-2 mr-2 rounded-2xl p-3">
             This site is a tribute to Pakistan's Independence Day, celebrated every year on <span className="text-green-400 font-bold">14th August</span>.
             <br />
             Let's remember the sacrifices of our ancestors and cherish the freedom of our beloved homeland. Pakistan Zindabad! 🇵🇰
