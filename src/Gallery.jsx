@@ -17,11 +17,23 @@ const Gallery = () => {
         },
         {
             id: 4,
+            img: "62f861869d896_876.jpg",
+        },
+        {
+            id: 5,
+            img: "302815_9611396_updates.webp",
+        },
+        {
+            id: 6,
+            img: "14.jpg",
+        },
+        {
+            id: 7,
             img: "2022-08_pakistan-day_04.jpg",
 
         },
         {
-            id: 5,
+            id: 8,
             img: "2022-08_pakistan-day_04 (1).jpg",
 
         },
