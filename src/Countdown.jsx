@@ -49,9 +49,7 @@ const Countdown = ({countdown}) => {
           </div>
         </div>
       </section>
-      <div>
-        <Curranttimes />
-      </div>
+    
     </>
   )
 }

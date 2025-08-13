@@ -36,6 +36,13 @@ const Header = ({isMobileMenuOpen , handleSmoothScroll , toggleMobileMenu}) => {
           >
             Since years
           </a>
+          <a
+            href="#dat&time"
+            onClick={(e) => handleSmoothScroll(e, "date&time")}
+            className="transition-all duration-300 ease-in-out hover:text-green-200 hover:scale-110 px-2 py-1 rounded"
+          >
+            Date && time
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -76,6 +83,7 @@ const Header = ({isMobileMenuOpen , handleSmoothScroll , toggleMobileMenu}) => {
               <a href="#leaders" onClick={(e) => handleSmoothScroll(e, "leaders")} className="px-4 py-3 rounded-2xl  hover:bg-green-600 transition-colors border-b border-green-600">Leaders</a>
               <a href="#gallery" onClick={(e) => handleSmoothScroll(e, "gallery")} className="px-4 py-3 rounded-2xl  hover:bg-green-600 transition-colors border-b border-green-600">Gallery</a>
               <a href="#countdown" onClick={(e) => handleSmoothScroll(e, "countdown")} className="px-4 py-3 hover:bg-green-600 rounded-2xl  transition-colors"> Since years</a>
+              <a href="#date&time" onClick={(e) => handleSmoothScroll(e, "date&time")} className="px-4 py-3 hover:bg-green-600 rounded-2xl  transition-colors">Date & Time</a>
             </div>
           </div>
         )}

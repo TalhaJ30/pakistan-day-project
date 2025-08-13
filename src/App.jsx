@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import Completedetail from "./Completedetail";
 import Gallery from "./Gallery";
 import Countdown from "./Countdown";
+import Curranttimes from "./Curranttimes";
 
 
 export default function App() {
@@ -49,9 +50,9 @@ export default function App() {
       setCountdown(`${yearsSinceIndependence}th`)
 
     }
-    
+
     calculateCountdown()
-   
+
   }, [])
 
   const toggleMobileMenu = () => {
@@ -136,6 +137,10 @@ export default function App() {
           {/* Countdown Section */}
           <div>
             <Countdown countdown={countdown} />
+          </div>
+          {/* Curranttimes Section */}
+          <div id="date&time">
+            <Curranttimes />
           </div>
 
           {/* Footer */}
