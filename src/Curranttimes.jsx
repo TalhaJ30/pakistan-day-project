@@ -15,6 +15,16 @@ const Curranttimes = () => {
             date.getSeconds() === 0
         );
     };
+    const isAugust15Midnight = (date) => {
+        // date: Date object to check
+        return (
+            date.getMonth() === 7 && // August (0-indexed)
+            date.getDate() === 15 &&
+            date.getHours() === 0 &&
+            date.getMinutes() === 0 &&
+            date.getSeconds() === 0
+        );
+    };
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -23,10 +33,15 @@ const Curranttimes = () => {
                 alert("It's 14th August, 12:00 AM! Reloading the page to celebrate Independence Day!");
                 window.location.reload();
             }
+            if (isAugust15Midnight(now)) {
+                alert("It's 15th August, 12:00 AM! Hope you had a good Independence Day celebration.");
+                window.location.reload();
+            }
         }, 1000);
 
         return () => clearInterval(interval);
     }, []);
+    
 
     useEffect(() => {
         const checkDate = () => {

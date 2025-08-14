@@ -15,8 +15,8 @@ const Footer = () => {
           <span className="text-white">Celebrating Unity, Faith, Discipline</span>
         </div>
         <div className="mb-4">
-          <p className="text-green-400 font-semibold text-lg bg-white ml-2 mr-2 rounded-2xl p-3">
-            Developed by <span className="text-green-600">Muhammad Talha Javed</span> &mdash; Passionate Frontend Developer
+          <p className="text-green-400 font-normal text-lg bg-white ml-2 mr-2 rounded-2xl p-3">
+            Developed by <span className="font-semibold text-green-600">Muhammad Talha Javed</span> &mdash; Passionate Frontend Developer
           </p>
           <p className="text-gray-500 text-base mt-1  bg-white ml-2 mr-2 rounded-2xl p-3">
             This site is a tribute to Pakistan's Independence Day, celebrated every year on <span className="text-green-400 font-bold">14th August</span>.

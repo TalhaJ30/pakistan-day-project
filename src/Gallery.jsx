@@ -13,15 +13,15 @@ const Gallery = () => {
         },
         {
             id: 3,
-            img: "celebration galler 2.jpg",
+            img: "302815_9611396_updates.webp",
         },
         {
             id: 4,
-            img: "62f861869d896_876.jpg",
+            img: "celebration galler 2.jpg",
         },
         {
             id: 5,
-            img: "302815_9611396_updates.webp",
+            img: "62f861869d896_876.jpg",
         },
         {
             id: 6,
