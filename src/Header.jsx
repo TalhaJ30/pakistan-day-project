@@ -82,8 +82,8 @@ const Header = ({isMobileMenuOpen , handleSmoothScroll , toggleMobileMenu}) => {
               <a href="#history" onClick={(e) => handleSmoothScroll(e, "history")} className="px-4 py-3 rounded-2xl hover:bg-green-600 transition-colors border-b border-green-600">History</a>
               <a href="#leaders" onClick={(e) => handleSmoothScroll(e, "leaders")} className="px-4 py-3 rounded-2xl  hover:bg-green-600 transition-colors border-b border-green-600">Leaders</a>
               <a href="#gallery" onClick={(e) => handleSmoothScroll(e, "gallery")} className="px-4 py-3 rounded-2xl  hover:bg-green-600 transition-colors border-b border-green-600">Gallery</a>
-              <a href="#countdown" onClick={(e) => handleSmoothScroll(e, "countdown")} className="px-4 py-3 hover:bg-green-600 rounded-2xl  transition-colors border-b"> Since years</a>
-              <a href="#date&time" onClick={(e) => handleSmoothScroll(e, "date&time")} className="px-4 py-3 hover:bg-green-600 rounded-2xl  transition-colors border-b">Date & Time</a>
+              <a href="#countdown" onClick={(e) => handleSmoothScroll(e, "countdown")} className="px-4 py-3 hover:bg-green-600 rounded-2xl  transition-colors border-b border-green-600"> Since years</a>
+              <a href="#date&time" onClick={(e) => handleSmoothScroll(e, "date&time")} className="px-4 py-3 hover:bg-green-600 rounded-2xl  transition-colors border-b border-green-600">Date & Time</a>
             </div>
           </div>
         )}
