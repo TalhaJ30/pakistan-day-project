@@ -4,13 +4,15 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-gradient-to-tr grid justify-center items-center from-green-400 via-green-500 to-green-600 text-white rounded-2xl mb-4 ml-2.5 mr-2.5 py-8 mt-10 text-center relative">
-        
-        <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-2 mb-4">
-          <span className="inline-flex items-center gap-2  font-semibold text-lg text-white">
-            {/* Pakistan Flag SVG */}
-            <img src="download (1).png" alt="Pakistan image" className='h-10 w-10'/>
-            Independence Day of Pakistan
-          </span>
+
+        <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-2 mb-4 ">
+          <div className='flex justify-center items-center border-black w-full'>
+            <span className="inline-flex items-center gap-2  font-semibold text-lg text-white ">
+              {/* Pakistan Flag SVG */}
+              <img src="download (1).png" alt="Pakistan image" className='footer-heading h-10 w-10' />
+              <span className='text-start'>Independence Day of Pakistan</span>
+            </span   >
+          </div>
           <span className="text-white">|</span>
           <span className="text-white">Celebrating Unity, Faith, Discipline</span>
         </div>

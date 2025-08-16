@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 /* 
   Tailwind CSS provides the 'scroll-smooth' utility class for smooth scrolling.
   To apply it globally, add 'scroll-smooth' to the <html> or <body> element in your index.html.
@@ -10,4 +11,24 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+
+
+@media only screen and (max-width:369px) {
+  .footer-heading {
+    margin-left: 35px;
+  }
+}
+
+@media only screen and (max-width:359px) {
+  .footer-heading {
+    margin-left: 27px;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .footer-heading {
+    margin-left: 0px;
+  }
 }

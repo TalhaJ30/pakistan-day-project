@@ -6,7 +6,7 @@ const Frontpage = ({handleSmoothScroll , countdown}) => {
             <div>
                 <section className={`flex flex-col md:flex-row items-center px-6 md:px-12 py-14 bg-white text-white`}>
                     <div className="flex-1">
-                        <h2 className="text-4xl md:text-5xl leading-[1.1]  font-semibold mb-6 bg-gradient-to-tr from-green-300 via-green-400 to-green-700 text-transparent bg-clip-text p-2">
+                        <h2 className="text-4xl md:text-5xl leading-[1.1]  font-semibold mb-6 bg-gradient-to-tr from-green-300 via-green-400 to-green-700 text-transparent bg-clip-text">
                        <span>{countdown}</span> Independence Day of Pakistan
                         </h2>
                         <p className="text-lg mb-6 bg-gradient-to-tl from-green-400 via-green-400 to-green-700  text-transparent bg-clip-text">
