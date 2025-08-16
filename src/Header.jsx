@@ -4,7 +4,7 @@ const Header = ({isMobileMenuOpen , handleSmoothScroll , toggleMobileMenu}) => {
   return (
     <>
        <nav className="relative flex justify-between items-center px-5 sm:px-5 py-4 bg-gradient-to-tr from-green-400 via-green-500 to-green-600 text-white shadow-md rounded-2xl ml-1.5 mr-1.5 mt-1.5">
-        <h1 className="text-xl sm:text-2xl font-medium">Pakistan Day</h1>
+        <h1 className="text-xl sm:text-2xl font-semibold">Pakistan Day</h1>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-2">
@@ -76,8 +76,8 @@ const Header = ({isMobileMenuOpen , handleSmoothScroll , toggleMobileMenu}) => {
         </button>
 
         {/* Mobile Navigation Menu */}
-        {isMobileMenuOpen && (
-          <div className="absolute top-full left-0 right-0  bg-gradient-to-tr from-green-600 via-green-500 to-green-600 bg-green-700 shadow-lg md:hidden z-50  mt-1.5 rounded-2xl">
+         {isMobileMenuOpen && (
+          <div className="absolute top-full left-0 right-0 bg-gradient-to-tr from-green-600 via-green-500 to-green-600 bg-green-700 shadow-lg md:hidden z-50  mt-1.5 rounded-2xl">
             <div className="flex flex-col space-y-0">
               <a href="#history" onClick={(e) => handleSmoothScroll(e, "history")} className="px-4 py-3 rounded-2xl hover:bg-green-600 transition-colors border-b border-green-600">History</a>
               <a href="#leaders" onClick={(e) => handleSmoothScroll(e, "leaders")} className="px-4 py-3 rounded-2xl  hover:bg-green-600 transition-colors border-b border-green-600">Leaders</a>
