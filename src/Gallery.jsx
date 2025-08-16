@@ -63,7 +63,7 @@ const Gallery = () => {
         <>
             <div className="flex justify-center items-center mt-6">
                 <div className="w-[100%] h-auto grid justify-center items-center bg-green-100 rounded-2xl ml-1.5 mr-1.5 pt-4 pb-4 pl-2 pr-2">
-                    <h1 className="text-center text-2xl md:text-3xl font-medium text-green-700">Celebration galler</h1>
+                    <h1 className="text-center text-2xl md:text-3xl font-semibold text-green-700">Celebration galler</h1>
                     <p className="text-center">Here are some pictures that prove that Pakistani people celebrate their Independence Day with great joy.</p>
                 </div>
             </div>

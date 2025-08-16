@@ -8,7 +8,7 @@ import Completedetail from "./Completedetail";
 import Gallery from "./Gallery";
 import Countdown from "./Countdown";
 import Curranttimes from "./Curranttimes";
-
+import './index.css'
 
 export default function App() {
 
@@ -107,7 +107,7 @@ export default function App() {
         </div>
       }
       {otherdeatil &&
-        <div className="font-sans bg-white text-gray-900">
+        <div className=" bg-white text-gray-900">
           {/* Navbar */}
 
           <Header isMobileMenuOpen={isMobileMenuOpen} handleSmoothScroll={handleSmoothScroll} toggleMobileMenu={toggleMobileMenu} />

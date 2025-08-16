@@ -50,7 +50,7 @@ const Completedetail = ({ closebtn }) => {
                                 <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                             </svg>
                         </button>
-                        <h1 className="text-4xl font-medium text-green-800 text-center mb-4">History of Pakistan</h1>
+                        <h1 className="text-4xl font-semibold text-green-800 text-center mb-4">History of Pakistan</h1>
                         <div className="border-b-2 border-green-200 mb-6"></div>
                         <section className="text-lg text-gray-800 leading-relaxed overflow-auto">
                             {items.map((item, index) => <div>

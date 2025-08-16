@@ -56,7 +56,7 @@ const Leader = () => {
     <>
       <section id="leaders" className="px-3 md:px-10 py-10 bg-green-100 mt-5.5 rounded-2xl ml-2.5 mr-2.5">
         <div className='mb-12'>
-          <h2 className="text-3xl font-medium text-green-900 text-center mb-1.5">National Heroes</h2>
+          <h2 className="text-3xl font-semibold text-green-900 text-center mb-1.5">National Heroes</h2>
           <p className='text-center' style={{ fontSize: "20px" }}>These are the personalities because of whom Pakistan became independent and that is why Pakistan is an independent country today.</p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
@@ -76,7 +76,7 @@ const Leader = () => {
                     className="  transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
-                <h4 className="text-2xl font-medium mb-2 text-green-800 group-hover:text-green-600 transition-colors">{item.name}</h4>
+                <h4 className="text-2xl font-semibold mb-2 text-green-800 group-hover:text-green-600 transition-colors">{item.name}</h4>
                 <p className="text-gray-700 text-base font-normal group-hover:text-green-800 transition-colors">{item.title}</p>
               </div>
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-green-400 via-green-500 to-green-600 opacity-80" />

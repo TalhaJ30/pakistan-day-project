@@ -191,21 +191,21 @@ const Curranttimes = () => {
 
                 <div className="bg-white  rounded-2xl p-6 mb-3">
                     <h1
-                        className='text-green-800 sm:text-3xl font-medium mb-4 text-2xl'
+                        className='text-green-800 sm:text-3xl font-semibold mb-4 text-2xl'
                         style={{ letterSpacing: '0.02em' }}
                     >
                         Remaining time
                     </h1>
                     <p className="text-xl md:text-2xl flex-wrap flex justify-center items-center text-green-500 font-normal text-center">
-                        THE INDEPENDENCE DAY IS COMING AFTER <div className='text-green-700 border-2 min-w-auto border-white bg-green-100 pl-1.5 pr-1.5 pb-0.5 ml-1 mt-1.5 mb-1.5 mr-1' style={{ borderRadius: "8px" }}>{getCountdownToIndependenceDay().days}  Days,</div> <div className='text-green-700 bg-green-100 pl-1.5 pr-1.5 pb-0.5 ml-1 mt-1.5 mb-1.5 mr-1 border-2 border-white' style={{ borderRadius: "8px" }}>{getCountdownToIndependenceDay().hours} Hours,</div> <div className='text-green-700 border-2  border-white bg-green-100 pl-1.5 pr-1.5 pb-0.5 ml-1 mt-1.5 mb-1.5 mr-1' style={{ borderRadius: "8px" }}>{getCountdownToIndependenceDay().minutes} Minutes,</div> <div className='text-green-700 bg-green-100 pl-1.5 pr-1.5 ml-1 mt-1.5 mb-1.5 mr-1 border-2 border-white pb-0.5' style={{ borderRadius: "8px" }}>{getCountdownToIndependenceDay().seconds} Seconds.</div> I HOPE YOU ARE WAITING FOR INDEPENDENCE DAY.
+                        THE INDEPENDENCE DAY IS COMING AFTER <div className='text-green-700 border-2 min-w-auto border-white bg-green-100 pl-1.5 pr-1.5 pb-0.5 ml-1 mt-1 mb-1 mr-1' style={{ borderRadius: "8px" }}>{getCountdownToIndependenceDay().days}  Days,</div> <div className='text-green-700 bg-green-100 pl-1.5 pr-1.5 pb-0.5 ml-1 mt-1 mb-1 mr-1 border-2 border-white' style={{ borderRadius: "8px" }}>{getCountdownToIndependenceDay().hours} Hours,</div> <div className='text-green-700 border-2  border-white bg-green-100 pl-1.5 pr-1.5 pb-0.5 ml-1 mt-1 mb-1 mr-1' style={{ borderRadius: "8px" }}>{getCountdownToIndependenceDay().minutes} Minutes,</div> <div className='text-green-700 bg-green-100 pl-1.5 pr-1.5 ml-1 mt-1 mb-1 mr-1 border-2 border-white pb-0.5' style={{ borderRadius: "8px" }}>{getCountdownToIndependenceDay().seconds} Seconds.</div> I HOPE YOU ARE WAITING FOR INDEPENDENCE DAY.
                     </p>
                 </div>
                 <div className='mb-4'>
                 <h1
-                        className='text-green-800 sm:text-3xl font-medium mb-2 mt-4 text-2xl'
+                        className='text-green-800 sm:text-3xl font-semibold mb-2 mt-5 text-2xl'
                         style={{ letterSpacing: '0.02em' }}
                     >
-                        Date <span className='text-green-600'>&</span> Time
+                        Date <span className='text-green-600 font-normal'>&</span> Time
                     </h1>
                 <div className="bg-white  rounded-2xl p-3 md:p-8 inline-block border border-green-200/20 shadow-xl ">
                             <div className="text-2xl md:text-4xl lg:text-5xl font-mono text-green-800  font-bold">

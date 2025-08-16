@@ -24,7 +24,7 @@ const Footer = () => {
             Let's remember the sacrifices of our ancestors and cherish the freedom of our beloved homeland. Pakistan Zindabad! 🇵🇰
           </p>
         </div>
-        <p className="text-green-800  bg-white ml-2 mr-2 rounded-2xl p-3">
+        <p className="text-green-800  bg-white ml-2 mr-2 rounded-2xl p-3 font-medium">
           © {new Date().getFullYear()} Pakistan Independence Day. All rights reserved.
         </p>
       </footer>

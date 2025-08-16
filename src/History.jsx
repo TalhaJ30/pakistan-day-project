@@ -25,7 +25,7 @@ const History = ({completedetailshowbtn}) => {
         <>
             <div>
                 <section className="px-6 md:px-20 py-10 bg-green-100 rounded-3xl ml-2 mr-2">
-                    <h3 className="text-3xl font-medium text-green-900 text-center mb-4">History of 14th August</h3>
+                    <h3 className="text-3xl font-semibold text-green-900 text-center mb-4">History of 14th August</h3>
                     <p className="max-w-4xl mx-auto text-lg leading-relaxed">
                         On 14th August 1947, Pakistan emerged as an independent nation after the partition of British India, led by Quaid-e-Azam Muhammad Ali Jinnah. Founded as a homeland for Muslims,
                         {showpara && (

@@ -7,7 +7,7 @@ const Countdown = ({countdown}) => {
   return (
     <>
        <section id="countdown" className="px-6 md:px-20 py-8 mt-6 bg-green-100 rounded-2xl ml-2.5 mr-2.5 text-green-800 text-center">
-        <h3 className="text-3xl font-medium mb-4">Years Since Pakistan's Independence</h3>
+        <h3 className="text-3xl font-semibold mb-4">Years Since Pakistan's Independence</h3>
         <p className="text-2xl mb-6">This is Pakistan's {countdown} Independence Day.</p>
         
         <div className="max-w-4xl mx-auto">

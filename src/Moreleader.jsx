@@ -38,34 +38,41 @@ const Moreleader = () => {
 
     return (
         <>
-            
-               
-                <div className="grid md:grid-cols-3 gap-8">
-                    {/* Leader cards */}
-                    {items.map((item, index) => (
-                        <div
-                            key={index}
-                            className="relative group p-0 bg-gradient-to-tr from-green-200 via-white to-green-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center border border-green-200 hover:border-green-500 overflow-hidden"
-                            style={{ minHeight: "370px" }}
-                        >
-                            <div className="absolute inset-0 bg-gradient-to-t from-green-100 via-transparent to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300 pointer-events-none z-0" />
-                            <div className="flex flex-col items-center relative z-10 p-6">
-                                <div className={`h-47 w-44 md:h-auto md:w-auto rounded-2xl overflow-hidden border-3 border-green-400 shadow-lg mb-4 bg-white `}>
-                                    <img
-                                        src={item.image}
-                                        alt={item.name}
-                                        className="  transition-transform duration-300 group-hover:scale-105"
-                                    />
-                                </div>
-                                <h4 className="text-2xl font-medium mb-2 text-green-800 group-hover:text-green-600 transition-colors">{item.name}</h4>
-                                <p className="text-gray-700 text-base font-normal group-hover:text-green-800 transition-colors">{item.title}</p>
-                            </div>
-                            <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-green-400 via-green-500 to-green-600 opacity-80" />
-                        </div>
-                    ))}
 
-                </div>
-            
+
+            <div className="grid md:grid-cols-3 gap-8">
+                {/* Leader cards */}
+                {items.map((item, index) => (
+                    <div
+                        key={index}
+                        className="relative group p-0 bg-gradient-to-tr from-green-200 via-white to-green-200 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center border border-green-200 hover:border-green-500 overflow-hidden"
+                        style={{ minHeight: "370px" }}
+                    >
+                        <div className="absolute inset-0 bg-gradient-to-t from-green-100 via-transparent to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300 pointer-events-none z-0" />
+                        <div className="flex flex-col items-center relative z-10 p-6">
+                            <div className={`h-47 w-44 md:h-auto md:w-auto rounded-2xl overflow-hidden border-3 border-green-400 shadow-lg mb-4 bg-white `}>
+                                <img
+                                    src={item.image}
+                                    alt={item.name}
+                                    className={`${item.image === "maulana-zafar-ali-khan-the-history-maker-1353957831-2806.jpg"
+                                        ? "h-46 w-46 md:h-auto md:w-auto" 
+                                        :  ""
+                                    } transition-transform duration-300 group-hover:scale-105 `}
+                                />
+                            </div>
+                            <h4
+                                className={`text-2xl font-semibold mb-2 text-green-800 group-hover:text-green-600 transition-colors`}
+                            >
+                                {item.name}
+                            </h4>
+                            <p className="text-gray-700 text-base font-normal group-hover:text-green-800 transition-colors">{item.title}</p>
+                        </div>
+                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-green-400 via-green-500 to-green-600 opacity-80" />
+                    </div>
+                ))}
+
+            </div>
+
         </>
     )
 }
