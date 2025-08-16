@@ -205,7 +205,7 @@ const Curranttimes = () => {
                         className='text-green-800 sm:text-3xl font-semibold mb-2 mt-5 text-2xl'
                         style={{ letterSpacing: '0.02em' }}
                     >
-                        Date <span className='text-green-600 font-normal'>&</span> Time
+                        Date <span className='text-green-600 font-medium'>&</span> Time
                     </h1>
                 <div className="bg-white  rounded-2xl p-3 md:p-8 inline-block border border-green-200/20 shadow-xl ">
                             <div className="text-2xl md:text-4xl lg:text-5xl font-mono text-green-800  font-bold">
