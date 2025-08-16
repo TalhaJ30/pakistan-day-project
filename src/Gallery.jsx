@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useDeferredValue, useEffect, useState } from "react";
 
 const Gallery = () => {
     const slides = [
@@ -46,9 +46,18 @@ const Gallery = () => {
         setCurrent(current === 0 ? slides.length - 1 : current - 1);
     };
 
-    const nextSlide = () => {
+     const nextSlide = () => {
         setCurrent(current === slides.length - 1 ? 0 : current + 1);
     };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrent(current === slides.length - 1 ? 0 : current + 1);
+        }, 8000);
+       
+        return () => clearInterval(interval);
+    })
+
 
     return (
         <>
